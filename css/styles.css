@@ -235,6 +235,7 @@
     z-index: 1;
 }
 
+.map-block .title,
 .partners .title {
     text-align: center;
 }
@@ -294,10 +295,6 @@
     max-width: 100%;
 }
 
-.w-100 {
-    width: 100%;
-}
-
 .text {
     font-family: 'PT Sans';
     font-style: normal;
@@ -306,4 +303,80 @@
     line-height: 19px;
     letter-spacing: 0.045em;
     color: #FFFFFF; 
+}
+
+.map-block {
+    background-image: url(../images/map-back.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.map-item:nth-child(-n+4) {
+    margin-bottom: 120px;
+}
+
+.map-item:first-child, .map-item:nth-child(5) {
+    opacity: 1;
+}
+
+.map-item {
+    width: 25%;
+    padding: 16px;
+    opacity: .2;
+    transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+}
+
+.map-item:hover {
+    opacity: 1;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.title-5 {
+    font-family: 'FUN GAMES', Verdana, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    color: #7230C9;
+}
+
+.vil-border {
+    padding: 14px;
+    border: 2px solid #7230C9;
+    border-radius: 28px 28px 28px 0px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+}
+
+.dots-ul li::before {
+    content: "";
+    height: 4px;
+    width: 4px;
+    background-color: #FFF;
+    top: 7px;
+    left: -9px;
+    display: inline;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    z-index: 10;
+    position: absolute;
+    border-radius: 50%;
 }
