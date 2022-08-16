@@ -44,6 +44,7 @@ div, ul {
     width: 100%;
     background: #000;
     border-bottom: 2px solid #7230C9;
+    font-size: 18px !important;
 }
 
 .menu {
@@ -75,8 +76,9 @@ div, ul {
 .top-slide-content {
     z-index: 1;
     position: relative;
-    height: 700px;
-    margin-right: -20px;
+    height: 850px;
+    margin: 0 auto;
+    max-width: 1600px;
     background-image: url(../images/hero.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -94,8 +96,19 @@ div, ul {
     flex-direction: column;
 }
 
+.text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.with-text {
+    width: 25%;
+}
+
 .info-block .text {
-    max-width: 600px;
+    max-width: 50%;
 }
 
 .info-block:before {
@@ -119,7 +132,7 @@ div, ul {
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 28px;
     line-height: 31px;
     color: #000000;
     text-transform: uppercase;
@@ -147,8 +160,8 @@ div, ul {
 .title {
     display: block;
     font-family: 'PT Sans';
-    font-size: 53px;
-    line-height: 74px;
+    font-size: 75px;
+    line-height: 80px;
     font-weight: 700;
     letter-spacing: 0.01em;
     font-style: normal;
@@ -161,8 +174,8 @@ div, ul {
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 18px;
+    line-height: 22px;
     color: #E3DBF3;
     text-decoration: none;
     display: -webkit-box;
@@ -209,8 +222,8 @@ div, ul {
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 20px;
+    line-height: 22px;
     letter-spacing: 0.045em;
     color: #FFFFFF;
 }
@@ -324,16 +337,6 @@ div, ul {
     max-width: 100%;
 }
 
-.text {
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.045em;
-    color: #FFFFFF; 
-}
-
 .map-block {
     background-image: url(../images/map-back.png);
     background-repeat: no-repeat;
@@ -404,6 +407,30 @@ ul {
 
 .tg {
      background-image: url(../images/telegram.svg);
+}
+
+.disc {
+     background-image: url(../images/disc.svg);
+}
+
+.reddit {
+     background-image: url(../images/reddit.png);
+}
+
+.youtube {
+     background-image: url(../images/youtube.png);
+}
+
+.inst {
+     background-image: url(../images/inst.svg);
+}
+
+.twi {
+     background-image: url(../images/twi.svg);
+}
+
+.tt {
+     background-image: url(../images/tt.png);
 }
 
 li {
