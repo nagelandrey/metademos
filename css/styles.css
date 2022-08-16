@@ -76,6 +76,7 @@ div, ul {
     z-index: 1;
     position: relative;
     height: 700px;
+    margin-right: -20px;
     background-image: url(../images/hero.png);
     background-repeat: no-repeat;
     background-size: contain;
